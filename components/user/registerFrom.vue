@@ -112,6 +112,11 @@ export default {
 
         .then(res => {
           console.log(res)
+          this.$message.warning('注册成功')
+          this.$router.go(-1)
+        }).catch(res=>{
+          console.log(res)
+          this.$message.warning('用户已存在,请重新输入')
         })
       }
     })
