@@ -2,10 +2,12 @@
 <template>
   <div class="xyly_index">
     <!-- 轮播图 开始 -->
-    <div class="index_carousel" >
-      <el-carousel indicator-position="outside" height='700px' >
+    <div class="index_carousel">
+      <el-carousel indicator-position="outside" height="700px">
         <el-carousel-item v-for="(item,index) in swiperList" :key="index">
-          <div :style="`background:url(${$axios.defaults.baseURL+item.url}) center center ;height: 700px`"></div>
+          <div
+            :style="`background:url(${$axios.defaults.baseURL+item.url}) center center ;height: 700px`"
+          ></div>
         </el-carousel-item>
       </el-carousel>
       <!--  tabs栏 开始 -->
@@ -29,7 +31,7 @@ export default {
       return {
         swiperList: res.data.data
       };
-    })
+    });
   }
 };
 </script>
@@ -47,7 +49,6 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-  };
-  
+  }
 }
 </style>
