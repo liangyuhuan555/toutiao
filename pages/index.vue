@@ -27,7 +27,6 @@ export default {
   },
   asyncData(context) {
     return context.app.$axios.get("/scenics/banners").then(res => {
-      console.log(res);
       return {
         swiperList: res.data.data
       };

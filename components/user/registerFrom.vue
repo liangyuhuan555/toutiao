@@ -98,7 +98,8 @@ export default {
       }
     },
     // 点击注册
-  registsubmitted() {
+  registsubmitted() 
+  {
     // 提交之前需要再次验证信息的合法性
     this.$refs.form.validate(valid => {
       if (valid) {
@@ -118,6 +119,8 @@ export default {
           console.log(res)
           this.$message.warning('用户已存在,请重新输入')
         })
+      }else{
+        return false
       }
     })
   }
@@ -125,7 +128,6 @@ export default {
   
 }
 </script>
-
 <style lang='less' scoped>
 .loginfrom {
   padding: 20px;

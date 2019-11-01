@@ -30,12 +30,14 @@ import registerFrom from "@/components/user/registerFrom.vue";
 export default {
   data() {
     return {
-      login_id: 1
+      login_id: 0
     };
   },
   components: {
     loginFrom,
     registerFrom
+  },
+  methods:{
   }
 };
 </script>
