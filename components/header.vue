@@ -46,25 +46,22 @@
 <script>
 export default {
   data() {
-    return {
-      
-    }
+    return {};
   },
   computed: {
-    userinfo(){
+    userinfo() {
       return this.$store.state.user.userinfo;
     }
   },
-   mounted(){
-
-    let userStr=localStorage.getItem("userinfo");
-    if(userStr){
-      // 存在 
-      let userinfo=JSON.parse(userStr);
+  mounted() {
+    let userStr = localStorage.getItem("userinfo");
+    if (userStr) {
+      // 存在
+      let userinfo = JSON.parse(userStr);
       // 把值设置到vuex
-      this.$store.commit("user/setUser",userinfo);
+      this.$store.commit("user/setUser", userinfo);
     }
-  },
+  }
 };
 </script>
 

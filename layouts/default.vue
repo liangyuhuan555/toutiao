@@ -1,6 +1,6 @@
 <template>
   <div>
-        <Header />
+       <Header />
         <nuxt />
         <Footer />
   </div>
@@ -20,5 +20,5 @@ export default {
 };
 </script>
 
-<style>
-</style>
+
+  

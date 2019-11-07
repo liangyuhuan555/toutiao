@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5262896",
+      "name": "彩色-皇冠",
+      "font_class": "cs-hg-1",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "8341756",
+      "name": "箭头2_上",
+      "font_class": "jiantou_shang",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "8341759",
+      "name": "箭头2_下",
+      "font_class": "jiantou_xia",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    }
+  ]
+}

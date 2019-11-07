@@ -65,7 +65,7 @@ export default {
           // 根据不同页码显示不同的数据公式
           // 当前页码-1 * 每页条数
           this.currentFlights = this.flightsdata.flights.slice(
-            (this.pages.current_page - 1 )* this.pages.page_size,
+            (this.pages.current_page - 1) * this.pages.page_size,
             this.pages.current_page * this.pages.page_size
           );
         });
@@ -73,13 +73,12 @@ export default {
         this.currentFlights = this.flightsdata.flights.slice(
           (this.pages.current_page - 1) * this.pages.page_size,
           this.pages.current_page * this.pages.page_size
-        )
+        );
       }
     },
-    // 每页要显示的页面数量点击事件 
+    // 每页要显示的页面数量点击事件
     // 每次改变选择数量 都可以返回选中的数量数值
     handleSizeChange(value) {
-      
       console.log(value);
       this.pages.page_size = value;
       this.getList();
@@ -103,5 +102,4 @@ div {
   width: 1000px;
   margin: 0 auto;
 }
-</style>>
-
+</style>
